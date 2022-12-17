@@ -19,8 +19,27 @@ git push origin master
 
 error error: src refspec hello does not match any
 
+If No master branch is present then it will throw above error
+so create master branch
+
 git checkout -b master
 
 # add commit
 
 git push origin master
+
++refs/pull/*:refs/remotes/origin/pr/*
+
+
+//******
+
+ls -l
+
+git add *
+git commit -m "any comments"
+
+git push origin master
+
+
+Declarative  - Check out is automatic
+but in scripted we need to explicitly mention the check out
