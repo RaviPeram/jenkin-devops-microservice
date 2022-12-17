@@ -1,24 +1,23 @@
- //stage blocks are optional  node step
+//stage blocks are optional  node step
 //scripted pipe line  node
 //DECLARATIVE pipeline > stages > stage > steps
 pipeline {
 	agent any
 	stages {
-		stage{
+		stage('Build') {
 			steps {
 				echo "Build"
 			}
 		}
-		stage{
+		stage('Test') {
 			steps {
 				echo "Test"
 			}
 		}
-		stage{
+		stage('Integration Test') {
 			steps {
 				echo "Integration Test"
 			}
 		}
 	}
-		
 }
