@@ -3,3 +3,24 @@ github_pat_11ABNR6ZY0WItUUOEuj8e2_lJF05WB1avJw4CJL5lxAZA4yZiXWjxHxYSZeTLoLFzHMED
 
 admin
 raviadmin
+
+
+raviperam13@gmail.com
+ravi@Git20
+
+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
+
+git branch -a  << display current and all branches
+
+git add .
+git commit -m "new changes"
+git push origin master
+
+
+error error: src refspec hello does not match any
+
+git checkout -b master
+
+# add commit
+
+git push origin master
