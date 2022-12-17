@@ -10,6 +10,8 @@ ravi@Git20
 
 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
 
+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
+
 git branch -a  << display current and all branches
 
 git add .
@@ -42,4 +44,10 @@ git push origin master
 
 
 Declarative  - Check out is automatic
-but in scripted we need to explicitly mention the check out
+but in scripted we need to explicitly mention the check out  ,, we will have stage called check out
+
+If build is un stable stage  we can perform some task's
+
+post task are important too depending up on the stage cleanup's
+
+post always, success,  failure,  changed
