@@ -2,7 +2,7 @@
 //scripted pipe line  node  
 //DECLARATIVE pipeline > stages > stage > steps
 pipeline {
-	//agent any
+	  agent any
 	//agent { docker { image 'maven:3.6.3'} }
 	stages {
 		stage('Build') {
