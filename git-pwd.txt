@@ -3,3 +3,51 @@ github_pat_11ABNR6ZY0WItUUOEuj8e2_lJF05WB1avJw4CJL5lxAZA4yZiXWjxHxYSZeTLoLFzHMED
 
 admin
 raviadmin
+
+
+raviperam13@gmail.com
+ravi@Git20
+
+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
+
+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
+
+git branch -a  << display current and all branches
+
+git add .
+git commit -m "new changes"
+git push origin master
+
+
+error error: src refspec hello does not match any
+
+If No master branch is present then it will throw above error
+so create master branch
+
+git checkout -b master
+
+# add commit
+
+git push origin master
+
++refs/pull/*:refs/remotes/origin/pr/*
+
+
+//******
+
+ls -l
+
+git add *
+git commit -m "any comments"
+
+git push origin master
+
+
+Declarative  - Check out is automatic
+but in scripted we need to explicitly mention the check out  ,, we will have stage called check out
+
+If build is un stable stage  we can perform some task's
+
+post task are important too depending up on the stage cleanup's
+
+post always, success,  failure,  changed
