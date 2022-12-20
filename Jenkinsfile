@@ -4,8 +4,12 @@
 pipeline {
 	  agent any
 	//agent { docker { image 'maven:3.6.3'} }
+	tools{
+		'org.jenkinsci.plugins.docker.commons.tools.DockerTool' '18.09'
+	}
 	environment{
-		dockerHome = tool 'myDocker'
+		//dockerHome = tool 'myDocker'
+		DOCKER_CERT_PATH = credentials('id-for-a-docker-cred')
 		mavenHome = tool 'myMaven'
 		//PATH = "$mavenHome/bin:$PATH"
 		PATH = "$dockerHome/bin:$mavenHome/bin:$PATH"
@@ -14,7 +18,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				sh 'mvn --version'
-				sh 'docker version'
+				sh 'docker version'// DOCKER_CERT_PATH is automatically picked up by the Docker client
 				echo "Build"
 				echo "$PATH"
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
